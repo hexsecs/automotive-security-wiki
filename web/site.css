@@ -390,3 +390,8 @@ h1,h2,h3{text-wrap:balance}
   .foot-in a{margin-left:0}
 }
 @media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+
+/* inline cross-links to notes, organizations and source records */
+.prose a.xl{text-decoration-color:var(--teal);text-decoration-thickness:1.5px}
+.prose a.xl:hover{text-decoration-color:var(--orange)}
+.bottom-box a.xl{text-decoration-color:var(--mustard)}

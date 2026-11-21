@@ -1,5 +1,7 @@
 ---
 title: An introduction into the Automotive Threat Matrix
+aliases:
+- "Automotive Threat Matrix"
 type: source-record
 source_type: article
 published: 2026-11-04

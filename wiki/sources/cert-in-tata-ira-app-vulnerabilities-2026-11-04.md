@@ -1,6 +1,9 @@
 ---
 title: 'CERT-In Vulnerability Note CIVN-2026-0537: Multiple Vulnerabilities in Tata
   Motors iRA and iRA.ev Application'
+aliases:
+- "Tata Motors"
+- "iRA.ev"
 type: source-record
 source_type: advisory
 published: 2026-11-04

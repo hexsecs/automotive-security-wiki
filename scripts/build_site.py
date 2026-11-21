@@ -110,6 +110,17 @@ class Site:
                 self.slugs[p.stem] = p
                 short = re.sub(r"-\d{4}-\d{2}-\d{2}$", "", p.stem)
                 self.slugs.setdefault(short, p)
+        # Aliases: names that link inline to a note, organization or source record.
+        self.alias_map: dict[str, Page] = {}
+        for p in self.pages.values():
+            if p.kind in ("concept", "entity", "source-record"):
+                for a in p.meta.get("aliases") or []:
+                    self.alias_map[esc(str(a))] = p
+        names = sorted(self.alias_map, key=len, reverse=True)
+        self.alias_re = (
+            re.compile(r"(?<![\w-])(" + "|".join(re.escape(n) for n in names) + r")(?![\w-])")
+            if names else None
+        )
         self.briefings = sorted(
             (p for p in self.pages.values() if p.kind == "briefing"),
             key=lambda p: p.date,
@@ -251,6 +262,10 @@ class Renderer:
         self.site = site
         self.page = page
         self.cites: list[Page | str] = []
+        self.linked: set[str] = set()  # targets already linked in the current section
+
+    def new_section(self):
+        self.linked = set()
 
     # link helpers ---------------------------------------------------------
     def href(self, target: Page) -> str:
@@ -280,7 +295,7 @@ class Renderer:
         return '<sup class="cites">' + "".join(out) + "</sup>"
 
     # inline ---------------------------------------------------------------
-    def inline(self, text: str) -> str:
+    def inline(self, text: str, auto: bool = True) -> str:
         stash: list[str] = []
 
         def keep(s: str) -> str:
@@ -295,6 +310,7 @@ class Renderer:
             p = self.site.resolve(target)
             lab = esc(label or (p.title if p and p.kind == "concept" else target.replace("-", " ")))
             if p:
+                self.linked.add(p.rel)
                 return keep(self.page_link(p, lab, "wl"))
             return keep(f'<span class="wl dead" title="Not in the public edition">{lab}</span>')
 
@@ -331,10 +347,21 @@ class Renderer:
         text = re.sub(r"\*\*(.+?)\*\*", r"<strong>\1</strong>", text)
         text = re.sub(r"(?<![\w*])\*(?!\s)(.+?)(?<!\s)\*(?!\w)", r"<em>\1</em>", text)
 
+        if auto and self.site.alias_re:
+            def alias(m):
+                p = self.site.alias_map[m[0]]
+                if p is self.page or p.rel in self.linked:
+                    return m[0]
+                self.linked.add(p.rel)
+                return keep(self.page_link(p, m[0], "xl"))
+
+            text = self.site.alias_re.sub(alias, text)
+
         def slug(m):
             p = self.site.slugs.get(m[0])
             if p and p is not self.page:
                 lab = p.title if p.kind == "concept" else m[0]
+                self.linked.add(p.rel)
                 return keep(self.page_link(p, esc(lab), "wl"))
             return m[0]
 
@@ -406,7 +433,9 @@ class Renderer:
                 continue
             if kind.startswith("h"):
                 lvl = int(kind[1])
-                h.append(f"<h{lvl}>{self.inline(val)}</h{lvl}>")
+                if lvl <= 2:
+                    self.new_section()
+                h.append(f"<h{lvl}>{self.inline(val, auto=False)}</h{lvl}>")
             elif kind == "p":
                 h.append(f"<p>{self.inline(val)}</p>")
             elif kind == "ul":
@@ -854,6 +883,7 @@ def build_briefing(site: Site, b: Page) -> str:
     sec_html = []
     fig = 0
     for s in sections:
+        r.new_section()
         title = s["title"]
         low = title.lower()
         if low == "bottom line":
@@ -884,12 +914,12 @@ def build_briefing(site: Site, b: Page) -> str:
             sec_html.append(f"""
 <section class="spec {family_class(title)}">
   <header class="spec-head"><span class="fig">Fig. {fig}</span><span class="fam">{esc(fam)}</span><span class="topic">{esc(topic)}</span>{meter(lvl, lab, True) if lvl else ""}</header>
-  {f'<h2 class="spec-title">{r.inline(headline)}</h2>' if headline else f'<h2 class="spec-title">{esc(title)}</h2>'}
+  {f'<h2 class="spec-title">{r.inline(headline, auto=False)}</h2>' if headline else f'<h2 class="spec-title">{esc(title)}</h2>'}
   <dl class="spec-rows">{''.join(rows)}</dl>
   {rest}
 </section>""")
         else:
-            sec_html.append(f'<section class="prose-sec"><h2>{r.inline(title)}</h2>{r.render_blocks(s["blocks"])}</section>')
+            sec_html.append(f'<section class="prose-sec"><h2>{r.inline(title, auto=False)}</h2>{r.render_blocks(s["blocks"])}</section>')
 
     srcs = source_items(site, r, b)
     pager = '<nav class="pager" aria-label="Adjacent issues">'

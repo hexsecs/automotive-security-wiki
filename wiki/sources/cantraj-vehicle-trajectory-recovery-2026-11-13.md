@@ -1,6 +1,8 @@
 ---
 title: 'CANTraj: Recovering Vehicle Trajectories from CAN Signals in Naturalistic
   Driving'
+aliases:
+- "CANTraj"
 type: source-record
 source_type: paper
 published: 2026-11-13

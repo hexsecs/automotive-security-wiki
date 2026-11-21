@@ -1,6 +1,8 @@
 ---
 title: 'VicOne Situational Awareness Report: 400 Cyber Incidents, with In-Vehicle
   Systems Most Affected in Q3 2026'
+aliases:
+- "Q3 report"
 type: source-record
 source_type: article
 published: 2026-10-18

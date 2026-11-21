@@ -1,6 +1,8 @@
 ---
 title: '‘Safeguarding against system failures and cyber threats’: SK hynix builds
   trust in physical AI memory'
+aliases:
+- "SK hynix"
 type: source-record
 source_type: article
 published: 2026-11-11

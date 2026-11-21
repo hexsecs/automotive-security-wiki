@@ -1,6 +1,8 @@
 ---
 title: Can Autonomous Vehicles Keep Their Cool? A Survey of Thermal Side-Channel and
   Perception Attacks
+aliases:
+- "thermal side-channel"
 type: source-record
 source_type: article
 published: 2026-10-15

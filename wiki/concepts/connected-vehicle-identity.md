@@ -1,6 +1,10 @@
 ---
 uid: 01a1ff09-f9e3-743b-afc1-008a9b43abd7
 title: Connected-Vehicle Identity and Apps
+aliases:
+- "connected-car APIs"
+- "app-to-vehicle authorization"
+- "account-to-vehicle authorization"
 created: 2026-11-21
 updated: 2026-11-21
 type: concept
@@ -26,9 +30,9 @@ summary: Connected-vehicle identity covers the customer accounts, mobile apps, i
 Connected vehicles are reached through customer accounts, mobile apps, identity platforms and backend APIs. Whoever controls that chain can often read telemetry and send remote commands with the same authority as the owner, without any in-vehicle exploit. The trust boundary that matters is customer account to vehicle authorization.
 
 ## What the archive shows
-- **An identity platform reached two automakers' cars.** Researchers chained an exposed ForgeRock/OpenIDM administrative surface, default credentials, and differences in how the WAF and backend interpreted paths into production identity access at two unnamed automakers. In controlled testing, valid customer sessions reached connected-car APIs with owner-equivalent telemetry and remote commands. The U.S. chain was reportedly fixed quickly. ^[raw/articles/sam-curry-forgerock-two-automakers-2026-11-07.md]
-- **Companion apps leak the keys.** CERT-In reported four high-severity flaws in older builds of Tata Motors' iRA 2.0 and iRA.ev apps: hard-coded credentials and API material, unsafe WebView URL and origin handling, tokens in logs, and ineffective certificate pinning. Fixed versions are iRA 2.0 26.8.2 and iRA.ev 26.9.1. ^[raw/articles/cert-in-tata-ira-app-vulnerabilities-2026-11-04.md]
-- **Incidents are not only in the enterprise.** VicOne observed 400 automotive cybersecurity incidents in Q3 2026: 174 involved in-vehicle systems and 149 enterprise IT, with ransomware in 97. The counts are proprietary observations, not a census. ^[raw/articles/vicone-q3-2026-automotive-cyber-incidents.md]
+- **An identity platform reached two automakers' cars.** Researchers chained an exposed ForgeRock/OpenIDM administrative surface, default credentials, and differences in how the WAF and backend interpreted paths into production identity access at two unnamed automakers. In controlled testing, valid customer sessions reached connected-car APIs with owner-equivalent telemetry and remote commands. The U.S. chain was reportedly fixed quickly. ^[sources/sam-curry-forgerock-two-automakers-2026-11-07.md]
+- **Companion apps leak the keys.** CERT-In reported four high-severity flaws in older builds of Tata Motors' iRA 2.0 and iRA.ev apps: hard-coded credentials and API material, unsafe WebView URL and origin handling, tokens in logs, and ineffective certificate pinning. Fixed versions are iRA 2.0 26.8.2 and iRA.ev 26.9.1. ^[sources/cert-in-tata-ira-app-vulnerabilities-2026-11-04.md]
+- **Incidents are not only in the enterprise.** VicOne observed 400 automotive cybersecurity incidents in Q3 2026: 174 involved in-vehicle systems and 149 enterprise IT, with ransomware in 97. The counts are proprietary observations, not a census. ^[sources/vicone-q3-2026-automotive-cyber-incidents.md]
 
 ## Working guidance
 - Audit identity deployments (ForgeRock/PingIDM and others) for exposed admin consoles such as `/system/console`, default or staging credentials, and edge-versus-backend path discrepancies.

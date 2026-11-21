@@ -12,3 +12,9 @@
 - Added entity notes for Block Harbor, CATARC, VicOne and the Zero Day Initiative.
 - Refreshed GNSS spoofing, CAN masquerade attacks, software-defined vehicles and automotive CAN with November evidence.
 - Briefing snapshots were not edited; notes link back to them through briefing trails.
+
+## 2026-11-21 sanitize | Public-edition privacy pass
+- Replaced private capture paths in footnotes (`raw/articles/…`, `raw/papers/…`) with public source-record paths.
+- Replaced an internal tooling name ("dashboard archive") with "briefing archive" in six briefings, and two internal page names with links to the public briefings. No findings, dates or confidence labels changed.
+- Removed a compatibility-path note from the briefing index and links to unpublished private notes; canarchy references now point to the public repository.
+- Added `aliases` to notes, organizations and named source records so the site links first mentions inline; regenerated `wiki/sources/MANIFEST.sha256`.

@@ -1,5 +1,7 @@
 ---
 title: United Chargers Grizzl-E Smart 40A ZDI advisories ZDI-26-1032 through ZDI-26-1036
+aliases:
+- "Grizzl-E"
 type: source-record
 source_type: article
 published: 2026-11-18

@@ -1,6 +1,8 @@
 ---
 title: 'Phantom of the Masquerade: Graph Neural Network-Based Detection of Masquerade
   Attacks in Controller Area Networks'
+aliases:
+- "PhantoMasq"
 type: source-record
 source_type: paper
 published: 2026-11-19
