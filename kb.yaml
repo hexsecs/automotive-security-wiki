@@ -1,0 +1,20 @@
+openshelf: "1.7"
+id: automotive-security-research-wiki
+uid: 5d8b8fe6-0c9d-4cf2-bf8c-4ad0b8b0a6e4
+title: Automotive Security Research Wiki
+description: Public source-grounded automotive cybersecurity research archive.
+layout:
+  pages: wiki
+  index: wiki/index.md
+  sources: wiki/sources
+  checksums: wiki/sources/MANIFEST.sha256
+profile: wiki
+visibility: public
+maintainers: [hexsecs]
+license: CC-BY-4.0
+types:
+  briefing: Dated immutable automotive cybersecurity briefing.
+  concept: Durable automotive security concept note.
+  entity: Automotive security entity note.
+  index: Category navigation page.
+  source-record: Public metadata-only citation record.

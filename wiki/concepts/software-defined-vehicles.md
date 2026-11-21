@@ -1,0 +1,62 @@
+---
+uid: 01a19d1a-2bea-734f-8f45-e0c1c20c373d
+title: Software-Defined Vehicles
+created: 2026-06-27
+updated: 2026-10-12
+type: concept
+tags:
+- research
+- source
+- synthesis
+sources:
+- wiki/sources/contextualizing-security-and-privacy-of-software-defined-vehicles-2026-06-23.md
+- wiki/sources/monitoring-vulnerabilities-next-generation-automotive-operating-systems-2026-07-08.md
+- wiki/sources/self-adaptive-anomaly-detection-reinforcement-learning-human-feedback-connected-vehicles-2026-07-09.md
+- wiki/sources/securing-autonomous-vehicle-systems-twin-aware-federated-reinforcement-learning-2026-07-09.md
+- wiki/sources/garage-llm-attack-graph-generation-2026-07-20.md
+- wiki/sources/architecture-2-0-ai-agents-computer-system-design-2025-02-01.md
+- wiki/sources/automotive-hsms-architectural-challenges-security-implications-2026-08-25.md
+- wiki/sources/deep-defence-on-wheels-dual-ids-in-vehicle-network-security-2026-10-05.md
+- wiki/sources/secfd-fl-secure-aggregation-iov-charging-load-forecasting-2026-10-09.md
+confidence: medium
+contested: false
+contradictions: []
+summary: Software-defined vehicles (SDVs) are vehicles whose hardware capabilities
+  are abstracted and managed through software, with centralized and distributed…
+---
+
+# Software-Defined Vehicles
+
+## Definition
+Software-defined vehicles (SDVs) are vehicles whose hardware capabilities are abstracted and managed through software, with centralized and distributed local and remote control, OTA update support, and increasingly cloud-connected services.
+
+Wikipedia: [Software Defined Vehicle](https://en.wikipedia.org/wiki/Software_Defined_Vehicle)
+
+## Current notes
+- SDVs expand the security problem beyond the in-vehicle bus into OTA channels, APIs, third-party software, cloud backends, and supply-chain trust.
+- The paper behind this page argues that SDV security is a lifecycle and architecture problem, not just a cryptography or network-filter problem.
+- Mixed-criticality systems are a central challenge because the vehicle has to isolate and coordinate features with very different safety requirements.
+- Privacy matters alongside security: data governance, consent, transparency, and purpose limitation all become part of the threat model.
+- Standards alignment matters; the paper points toward ISO/SAE 21434 and UNECE WP.29-style thinking as part of the baseline.
+- The VERA paper adds an operational layer: SDV vulnerability management needs cross-stack scanning, package/version normalization, exploitability filtering, and controlled validation rather than raw CVE enumeration. Its results show that certified or safety-oriented platforms can still retain meaningful exposure, while high CVE counts must be interpreted as potential attack surface rather than immediate compromise. ^[raw/papers/monitoring-vulnerabilities-next-generation-automotive-operating-systems-2026-07-08.md]
+- The connected-vehicle anomaly-detection paper adds runtime adaptation: OTA updates and changing workloads can create concept drift, so monitoring needs drift alarms, detector selection, human review, and replay-protected retraining rather than static thresholds alone. ^[raw/papers/self-adaptive-anomaly-detection-reinforcement-learning-human-feedback-connected-vehicles-2026-07-09.md]
+- SecApp extends the same defense boundary to collaborative control learning: federated RL needs poisoning-resistant aggregation, historical-update checks, and digital-twin rehearsal before learned policies influence safety-critical vehicles. ^[raw/papers/securing-autonomous-vehicle-systems-twin-aware-federated-reinforcement-learning-2026-07-09.md]
+- GARAGE adds architecture-aware attack-graph generation: RAG can accelerate tactical threat enumeration and CTI synthesis, but firmware, persistence, proprietary IPC, and other implementation-level steps still require human validation. ^[raw/papers/garage-llm-attack-graph-generation-2026-07-20.md]
+- Deep Defence on Wheels adds a hardware-aware runtime defense pattern for in-vehicle networks: quantized supervised and unsupervised IDS models are co-deployed on an FPGA/SoC, but production claims still require cross-vehicle, adversarial, false-positive, and fail-safe validation. ^[raw/papers/deep-defence-on-wheels-dual-ids-in-vehicle-network-security-2026-10-05.md, raw/papers/secfd-fl-secure-aggregation-iov-charging-load-forecasting-2026-10-09.md]
+- The automotive HSM paper frames hardware-rooted trust as a way to support secure boot, key storage, secure execution, and software signing, while leaving isolation, performance, updateability, side-channel, and post-quantum tradeoffs explicit. ^[raw/papers/automotive-hsms-architectural-challenges-security-implications-2026-08-25.md, raw/papers/deep-defence-on-wheels-dual-ids-in-vehicle-network-security-2026-10-05.md, raw/papers/secfd-fl-secure-aggregation-iov-charging-load-forecasting-2026-10-09.md]
+- Architecture 2.0 provides a cross-domain design-governance analogue: AI agents in complex system design need secure data exchange, standardized evaluation, hardware-in-the-loop verification, interpretable outputs, and human override rather than autonomous generation by default. ^[raw/articles/architecture-2-0-ai-agents-computer-system-design-2025-02-01.md, raw/papers/automotive-hsms-architectural-challenges-security-implications-2026-08-25.md, raw/papers/deep-defence-on-wheels-dual-ids-in-vehicle-network-security-2026-10-05.md, raw/papers/secfd-fl-secure-aggregation-iov-charging-load-forecasting-2026-10-09.md]
+
+- moving-target-defense-sdn-enabled-ev-charging-network adds a network-layer defense against low-rate SDN flow-table exhaustion, but remains an emulated-testbed result requiring deployment validation.
+- secfd-fl-secure-aggregation-iov-charging-load-forecasting adds a privacy-preserving federated-learning pattern for charging-load forecasting; its masking and key-management assumptions still need operational validation. ^[raw/papers/secfd-fl-secure-aggregation-iov-charging-load-forecasting-2026-10-09.md]
+
+## Related pages
+- [[automotive-can]]
+- deep-defence-on-wheels-dual-ids-in-vehicle-network-security
+- [[can-masquerade-attacks]]
+- contextualizing-security-and-privacy-of-software-defined-vehicles
+- a-hybrid-intrusion-detection-system-for-electric-vehicle-charging-infrastructure
+- monitoring-vulnerabilities-next-generation-automotive-operating-systems
+- self-adaptive-anomaly-detection-reinforcement-learning-human-feedback-connected-vehicles
+- securing-autonomous-vehicle-systems-twin-aware-federated-reinforcement-learning
+- garage-llm-attack-graph-generation
+- architecture-2-0-ai-agents-computer-system-design
