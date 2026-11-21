@@ -106,7 +106,7 @@ class Site:
             self.pages[p.rel] = p
         self.slugs: dict[str, Page] = {}
         for p in self.pages.values():
-            if p.kind in ("concept", "source-record"):
+            if p.kind in ("concept", "entity", "source-record"):
                 self.slugs[p.stem] = p
                 short = re.sub(r"-\d{4}-\d{2}-\d{2}$", "", p.stem)
                 self.slugs.setdefault(short, p)
@@ -117,6 +117,9 @@ class Site:
         )
         self.concepts = sorted(
             (p for p in self.pages.values() if p.kind == "concept"), key=lambda p: p.title
+        )
+        self.entities = sorted(
+            (p for p in self.pages.values() if p.kind == "entity"), key=lambda p: p.title
         )
         self.sources = sorted(
             (p for p in self.pages.values() if p.kind == "source-record"),
@@ -468,22 +471,20 @@ def plate_svg(site: Site, page: Page) -> tuple[str, str]:
         p = site.resolve(target_rel)
         return relurl(page.url, p.url) if p else "#"
 
-    zdi = next((s for s in site.sources if "grizzle" in s.stem), None)
-    aaos = next((s for s in site.sources if "aaos" in s.stem), None)
     thermal = next((s for s in site.sources if "thermal" in s.stem), None)
     callouts = [
         (1, 300, 118, "GNSS receiver", "Position spoofing on V2X and fleet tracking",
          link("concepts/gnss-spoofing")),
         (2, 232, 150, "Telematics unit", "Cloud APIs, OTA, and the SDV perimeter",
-         link("concepts/software-defined-vehicles")),
+         link("concepts/connected-vehicle-identity")),
         (3, 400, 176, "Infotainment", "Android Automotive platform advisories",
-         relurl(page.url, aaos.url) if aaos else "#"),
+         link("concepts/android-automotive-os-security")),
         (4, 470, 236, "CAN backbone", "In-vehicle network and gateway policy",
          link("concepts/automotive-can")),
         (5, 262, 236, "Masquerading ECU", "Frame substitution that keeps timing intact",
          link("concepts/can-masquerade-attacks")),
         (6, 62, 168, "Charge port & EVSE", "OCPP backends and charger firmware",
-         relurl(page.url, zdi.url) if zdi else "#"),
+         link("concepts/ev-charging-security")),
         (7, 604, 220, "Perception sensors", "Thermal and sensor-side attacks on ADAS",
          relurl(page.url, thermal.url) if thermal else "#"),
     ]
@@ -970,13 +971,13 @@ def build_concept(site: Site, c: Page) -> str:
     r = Renderer(site, c)
     content = r.render(c.body)
     srcs = source_items(site, r, c)
-    mentions = [b for b in site.briefings if c.stem in b.body]
+    mentions = [b for b in site.briefings if c.stem in b.body or b.rel in c.body]
     ment = "".join(f'<li><a href="{esc(relurl(c.url, b.url))}">{fmt_date(b.date, True)}</a><small>{esc(clip(b.data["lead"], 70))}</small></li>' for b in mentions[:8])
     lvl, lab = confidence_level(str(c.meta.get("confidence", "")))
     body = f"""
-<div class="shell crumbs"><a href="../index.html">Home</a> / <a href="index.html">Notes</a> / {esc(c.title)}</div>
+<div class="shell crumbs"><a href="{esc(relurl(c.url, 'index.html'))}">Home</a> / <a href="{esc(relurl(c.url, 'concepts/index.html'))}">Notes</a> / {esc(c.title)}</div>
 <header class="shell page-head">
-  <p class="eyebrow">Durable research note · updated {esc(c.meta.get('updated', ''))}</p>
+  <p class="eyebrow">{'Organization profile' if c.kind == 'entity' else 'Durable research note'} · updated {esc(c.meta.get('updated', ''))}</p>
   <h1 class="display sm">{esc(c.title)}</h1>
   <div class="doc-meta">{meter(lvl, lab)}<span>{len(c.meta.get('sources') or [])} linked sources</span></div>
 </header>
@@ -1000,11 +1001,20 @@ def build_concept_index(site: Site) -> str:
   <span>{esc(strip_md(str(c.meta.get('summary', ''))))}</span></a>"""
         for i, c in enumerate(site.concepts, 1)
     )
+    orgs = "".join(
+        f"""<a class="note" href="{esc(relurl(page.url, e.url))}">
+  <span class="eyebrow">{esc(str(e.meta.get('entity_kind', 'organization')).replace('-', ' '))} · {len(e.meta.get('sources') or [])} sources</span>
+  <strong>{esc(e.title)}</strong>
+  <span>{esc(clip(strip_md(str(e.meta.get('summary', ''))), 140))}</span></a>"""
+        for e in site.entities
+    )
     body = f"""
 <div class="shell crumbs"><a href="../index.html">Home</a> / Notes</div>
 <header class="shell page-head"><p class="eyebrow">Durable notes</p><h1 class="display sm">Concept index</h1>
 <p class="lede">Longer-lived notes that briefings link back to. They change as evidence accumulates; briefings do not.</p></header>
-<section class="shell"><div class="notes wide">{notes}</div></section>"""
+<section class="shell"><div class="notes wide">{notes}</div></section>
+<section class="shell"><div class="sectionhead"><h2>Organizations</h2><span>Sources that recur across briefings</span></div>
+<div class="notes">{orgs}</div></section>"""
     return document(page, site, "Concept Notes", body, "concepts", "Durable automotive security research notes.")
 
 
@@ -1114,7 +1124,7 @@ def main():
         write(out, b.url, build_briefing(site, b))
     write(out, "briefings/automotive/index.html", build_briefing_index(site))
     write(out, "briefings/index.html", '<!doctype html><meta charset="utf-8"><meta http-equiv="refresh" content="0; url=automotive/index.html"><title>Briefings</title><a href="automotive/index.html">Briefing archive</a>')
-    for c in site.concepts:
+    for c in site.concepts + site.entities:
         write(out, c.url, build_concept(site, c))
     write(out, "concepts/index.html", build_concept_index(site))
     for s in site.sources:

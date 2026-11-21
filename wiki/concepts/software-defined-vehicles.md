@@ -2,7 +2,7 @@
 uid: 01a19d1a-2bea-734f-8f45-e0c1c20c373d
 title: Software-Defined Vehicles
 created: 2026-06-27
-updated: 2026-10-12
+updated: 2026-11-21
 type: concept
 tags:
 - research
@@ -18,6 +18,7 @@ sources:
 - wiki/sources/automotive-hsms-architectural-challenges-security-implications-2026-08-25.md
 - wiki/sources/deep-defence-on-wheels-dual-ids-in-vehicle-network-security-2026-10-05.md
 - wiki/sources/secfd-fl-secure-aggregation-iov-charging-load-forecasting-2026-10-09.md
+- wiki/sources/vicone-q3-2026-automotive-cyber-incidents.md
 confidence: medium
 contested: false
 contradictions: []
@@ -48,6 +49,16 @@ Wikipedia: [Software Defined Vehicle](https://en.wikipedia.org/wiki/Software_Def
 
 - moving-target-defense-sdn-enabled-ev-charging-network adds a network-layer defense against low-rate SDN flow-table exhaustion, but remains an emulated-testbed result requiring deployment validation.
 - secfd-fl-secure-aggregation-iov-charging-load-forecasting adds a privacy-preserving federated-learning pattern for charging-load forecasting; its masking and key-management assumptions still need operational validation. ^[raw/papers/secfd-fl-secure-aggregation-iov-charging-load-forecasting-2026-10-09.md]
+
+## November 2026 synthesis (updated 2026-11-21)
+- Incidents have reached the vehicle domain: VicOne observed 400 automotive incidents in Q3 2026, 174 of them involving in-vehicle systems against 149 in enterprise IT. ^[raw/articles/vicone-q3-2026-automotive-cyber-incidents.md]
+- The SDV perimeter now has its own notes:
+  - [[concepts/connected-vehicle-identity|Connected-Vehicle Identity and Apps]] covers accounts, apps and backend APIs.
+  - [[concepts/android-automotive-os-security|Android Automotive OS Security]] covers the infotainment OS and its patch cadence.
+  - [[concepts/ev-charging-security|EV Charging Security]] covers chargers, OCPP and Plug & Charge.
+  - [[concepts/ai-defined-vehicles|AI-Defined Vehicles]] covers models and agents in vehicle decisions.
+  - [[concepts/vehicle-trust-anchors|Vehicle Trust Anchors and Cryptography]] covers HSMs, TPMs and PQC.
+  - [[concepts/automotive-tara|Automotive TARA]] covers ISO/SAE 21434 risk analysis.
 
 ## Related pages
 - [[automotive-can]]

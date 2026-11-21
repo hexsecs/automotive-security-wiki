@@ -18,7 +18,22 @@ A public, source-grounded archive of automotive cybersecurity briefings and dura
 
 ## Durable research notes
 
-- [[concepts/automotive-can|automotive can]]
-- [[concepts/can-masquerade-attacks|can masquerade attacks]]
-- [[concepts/gnss-spoofing|gnss spoofing]]
-- [[concepts/software-defined-vehicles|software defined vehicles]]
+- [[concepts/ai-defined-vehicles|AI-defined vehicles]]
+- [[concepts/android-automotive-os-security|Android Automotive OS security]]
+- [[concepts/automotive-can|Automotive CAN]]
+- [[concepts/automotive-tara|Automotive TARA]]
+- [[concepts/can-masquerade-attacks|CAN masquerade attacks]]
+- [[concepts/connected-vehicle-identity|Connected-vehicle identity and apps]]
+- [[concepts/ev-charging-security|EV charging security]]
+- [[concepts/gnss-spoofing|GNSS spoofing]]
+- [[concepts/in-vehicle-ids-evaluation|In-vehicle IDS evaluation]]
+- [[concepts/software-defined-vehicles|Software-defined vehicles]]
+- [[concepts/vehicle-data-privacy|Vehicle data privacy]]
+- [[concepts/vehicle-trust-anchors|Vehicle trust anchors and cryptography]]
+
+## Organizations
+
+- [[entities/block-harbor|Block Harbor]]
+- [[entities/catarc|CATARC]]
+- [[entities/vicone|VicOne]]
+- [[entities/zero-day-initiative|Zero Day Initiative]]

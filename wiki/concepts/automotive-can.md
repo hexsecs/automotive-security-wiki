@@ -2,7 +2,7 @@
 uid: 01a19d1a-2be3-74ab-b336-e8f565b83966
 title: Automotive CAN
 created: 2026-05-22
-updated: 2026-10-11
+updated: 2026-11-21
 type: concept
 tags:
 - software
@@ -11,6 +11,8 @@ tags:
 sources:
 - wiki/sources/mids-detecting-stealthy-masquerade-and-tampering-attacks-on-can-bus-via-bidirectional-mamba-2026-06-17.md
 - wiki/sources/deep-defence-on-wheels-dual-ids-in-vehicle-network-security-2026-10-05.md
+- wiki/sources/uspto-karma-vehicle-security-system-2026-11-12.md
+- wiki/sources/cantraj-vehicle-trajectory-recovery-2026-11-13.md
 confidence: medium
 contested: false
 contradictions: []
@@ -36,9 +38,17 @@ Wikipedia: [CAN bus](https://en.wikipedia.org/wiki/CAN_bus)
 
 - moving-target-defense-sdn-enabled-ev-charging-network adds a network-layer defense against low-rate SDN flow-table exhaustion, but remains an emulated-testbed result requiring deployment validation.
 
+## November 2026 updates (updated 2026-11-21)
+- CAN data is privacy-sensitive: CANTraj recovers vehicle trajectories from decoded CAN events even when GPS fields are omitted. ^[raw/papers/cantraj-vehicle-trajectory-recovery-2026-11-13.md]
+- Message integrity across mixed networks: a Karma Automotive patent publication matches messages received over Ethernet and CAN within a time window and splits key material across paths. ^[raw/articles/uspto-karma-vehicle-security-system-2026-11-12.md]
+- Detector claims need representative data; see [[concepts/in-vehicle-ids-evaluation|In-Vehicle IDS Evaluation]].
+
 ## Related pages
 - canarchy
 - python
 - can-masquerade-attacks
 - software-defined-vehicles
 - mids-detecting-stealthy-masquerade-and-tampering-attacks-on-can-bus-via-bidirectional-mamba
+- [[concepts/in-vehicle-ids-evaluation|In-Vehicle IDS Evaluation]]
+- [[concepts/vehicle-data-privacy|Vehicle Data Privacy]]
+- [[concepts/vehicle-trust-anchors|Vehicle Trust Anchors and Cryptography]]
