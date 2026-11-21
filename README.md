@@ -2,6 +2,8 @@
 
 Public subset of Phil's source-grounded research wiki, focused exclusively on automotive cybersecurity.
 
+Read it online: https://hexsecs.github.io/automotive-security-wiki/
+
 ## Contents
 
 - Dated automotive cybersecurity briefings
