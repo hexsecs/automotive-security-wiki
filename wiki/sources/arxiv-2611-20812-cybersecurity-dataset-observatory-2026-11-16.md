@@ -1,5 +1,8 @@
 ---
 title: 'The Cybersecurity Dataset Observatory: Which Data for AI in Cybersecurity?'
+aliases:
+- "Cybersecurity Dataset Observatory"
+- "Dataset Observatory"
 type: source-record
 source_type: paper
 published: 2026-11-16

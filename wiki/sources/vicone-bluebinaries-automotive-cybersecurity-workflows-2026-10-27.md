@@ -1,6 +1,8 @@
 ---
 title: VicOne and BlueBinaries Partner to Bring Automotive Cybersecurity into Existing
   Engineering Workflows
+aliases:
+- "BlueBinaries"
 type: source-record
 source_type: article
 published: 2026-10-27

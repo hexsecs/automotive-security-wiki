@@ -1,6 +1,8 @@
 ---
 title: 'Hacking Two Automakers: ForgeRock Path Confusion, RCE, and Remote Vehicle
   Access'
+aliases:
+- "ForgeRock"
 type: source-record
 source_type: article
 published: 2026-11-07

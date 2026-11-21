@@ -1,5 +1,7 @@
 ---
 title: Monitoring Vulnerabilities Next Generation Automotive Operating Systems 2026 07 08
+aliases:
+- "VERA"
 type: source-record
 status: metadata-only
 public_record: Referenced by a private briefing; no public capture was available at export time.

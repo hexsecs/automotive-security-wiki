@@ -1,6 +1,8 @@
 ---
 title: United Chargers Grizzl-E Smart 40A OCPP UpdateFirmware Out-Of-Bounds Write
   Remote Code Execution Vulnerability
+aliases:
+- "CVE-2026-131813"
 type: source-record
 source_type: article
 published: 2026-11-19

@@ -1,6 +1,8 @@
 ---
 title: 'Janus Vehicles: Entity-Centric Threat Modelling of Protocol-Conformant Vehicles
   under a Malicious-Manufacturer Assumption'
+aliases:
+- "Janus Vehicles"
 type: source-record
 source_type: paper
 published: 2026-10-27

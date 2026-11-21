@@ -1,6 +1,8 @@
 ---
 title: Automotive Security Architectures for Plug & Charge with a Central Trusted
   Platform Module
+aliases:
+- "ATHENE"
 type: source-record
 source_type: article
 published: 2026-11-13

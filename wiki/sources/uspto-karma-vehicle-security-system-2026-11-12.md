@@ -1,5 +1,7 @@
 ---
 title: Vehicle Security System (US 2026/0361706 A1)
+aliases:
+- "Karma Automotive"
 type: source-record
 source_type: article
 published: 2026-11-12

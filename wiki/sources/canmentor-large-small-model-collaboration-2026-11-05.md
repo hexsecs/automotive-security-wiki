@@ -1,6 +1,8 @@
 ---
 title: 'CANMentor: A Large-Small Model Collaboration Framework for CAN Bus Intrusion
   Detection'
+aliases:
+- "CANMentor"
 type: source-record
 source_type: article
 published: 2026-11-05

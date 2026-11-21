@@ -1,5 +1,7 @@
 ---
 title: The use of post-quantum cryptography in the automotive context
+aliases:
+- "ML-KEM"
 type: source-record
 source_type: paper
 published: 2026-10-28
