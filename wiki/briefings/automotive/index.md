@@ -6,6 +6,7 @@ title: Automotive cybersecurity briefings
 # Automotive cybersecurity briefings
 
 Dated, immutable security briefings organized by publication date.
+- [[briefings/automotive/2026/11/2026-11-25|Automotive Cybersecurity Briefing — 2026-11-25]] — Six ChargePoint Home Flex disclosures lead the issue, alongside a vehicular-network research paper and a ZF software lifecycle announcement.
 - [[briefings/automotive/2026/11/2026-11-24|Automotive Cybersecurity Briefing — 2026-11-24]] — A V2X security survey maps defenses across radio technologies, and an FIA paper proposes a common approach to vehicle-data access.
 - [[briefings/automotive/2026/11/2026-11-23|Automotive Cybersecurity Briefing — 2026-11-23]] — No new automotive-specific development met the evidence threshold in the sources checked.
 - [[briefings/automotive/2026/11/2026-11-21|Automotive Cybersecurity Briefing — 2026-11-21]] — Automotive Cybersecurity Briefing —
