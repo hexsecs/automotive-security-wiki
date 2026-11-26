@@ -28,6 +28,7 @@ A public, source-grounded archive of automotive cybersecurity briefings and dura
 - [[concepts/gnss-spoofing|GNSS spoofing]]
 - [[concepts/in-vehicle-ids-evaluation|In-vehicle IDS evaluation]]
 - [[concepts/software-defined-vehicles|Software-defined vehicles]]
+- [[concepts/v2x-security|V2X security]]
 - [[concepts/vehicle-data-privacy|Vehicle data privacy]]
 - [[concepts/vehicle-trust-anchors|Vehicle trust anchors and cryptography]]
 

@@ -10,7 +10,7 @@ aliases:
 - "HSMs"
 - "HSM"
 created: 2026-11-21
-updated: 2026-11-21
+updated: 2026-11-26
 type: concept
 tags:
 - research
@@ -23,6 +23,7 @@ sources:
 - wiki/sources/uspto-karma-vehicle-security-system-2026-11-12.md
 - wiki/sources/automotive-hsms-architectural-challenges-security-implications-2026-08-25.md
 - wiki/sources/sk-hynix-lpddr5x-iso-sae-21434-2026-11-11.md
+- wiki/sources/vehicular-edge-ids-post-quantum-cryptography-2026-11-19.md
 confidence: medium
 contested: false
 contradictions: []
@@ -39,6 +40,7 @@ Trust anchors are the roots a vehicle's security depends on: hardware security m
 ## What the archive shows
 - **PQC costs are measurable but scenario-bound.** A comparison of ML-KEM (Kyber), ML-DSA (Dilithium) and FALCON in simulated rural V2V and urban V2X scenarios, against an ECDSA/ECDH baseline, reports low Kyber KEM latency, balanced Dilithium signatures, and costly FALCON key generation and signing with efficient verification. ^[sources/post-quantum-cryptography-automotive-context-2026-10-28.md]
 - **PQ authentication is showing up in V2X research.** A vehicular federated-learning paper adds post-quantum-authenticated V2I links and reports a 92.4% smaller authenticated uplink with one-bit updates, in simulation. ^[sources/communication-efficient-private-federated-reinforcement-learning-vehicular-networks-2026-10-29.md]
+- **PQC competes with detection for the same budget.** A vehicular edge study evaluates detector and post-quantum cryptography choices together under a shared deadline and bandwidth budget; its embedded timing estimates still need checking on the target gateway under load. ^[sources/vehicular-edge-ids-post-quantum-cryptography-2026-11-19.md]
 - **Zonal vehicles may centralize keys.** ATHENE/Fraunhofer proposes one TPM 2.0 holding Plug & Charge keys for several EV communication controllers, which cuts repeated trust anchors but creates a single point of trust and denial. ^[sources/athene-automotive-security-plug-charge-tpm-2026-11-13.md]
 - **Message integrity can use redundant paths.** A Karma Automotive patent publication (US 2026/0361706 A1) validates messages by matching copies received over Ethernet and CAN within a time window and splits authentication-key material across messages or paths. ^[sources/uspto-karma-vehicle-security-system-2026-11-12.md]
 - **HSMs are one layer, not the answer.** Automotive HSMs support secure boot, key storage, secure execution and signing, but leave isolation, performance, updateability, side-channel and post-quantum trade-offs open. ^[sources/automotive-hsms-architectural-challenges-security-implications-2026-08-25.md]
@@ -64,3 +66,4 @@ Trust anchors are the roots a vehicle's security depends on: hardware security m
 - [[concepts/ev-charging-security|EV Charging Security]]
 - [[concepts/automotive-can|Automotive CAN]]
 - [[concepts/software-defined-vehicles|Software-Defined Vehicles]]
+- [[concepts/v2x-security|V2X Security]]
