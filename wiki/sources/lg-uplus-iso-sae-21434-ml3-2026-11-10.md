@@ -1,12 +1,21 @@
 ---
-title: Lg Uplus Iso Sae 21434 Ml3 2026 11 10
+title: "LG Uplus announces ISO/SAE 21434 CSMS ML3 certification"
 aliases:
 - "LG Uplus"
 type: source-record
+source_type: article
+published: 2026-11-10
 status: metadata-only
-public_record: Referenced by a private briefing; no public capture was available at export time.
+source_url: https://lg.co.kr/media/release/30764
+public_record: metadata-only
 ---
 
-# Lg Uplus Iso Sae 21434 Ml3 2026 11 10
+# LG Uplus announces ISO/SAE 21434 CSMS ML3 certification
 
-No source capture or canonical URL was available for this public export.
+This is a public citation record. The full source text is intentionally not republished here.
+
+**Canonical source:** [https://lg.co.kr/media/release/30764](https://lg.co.kr/media/release/30764)
+
+**Publication date:** 2026-11-10
+
+**Evidence status:** Vendor announcement verified in the 14 November 2026 briefing. A certification claim, not evidence of product security.

@@ -5,13 +5,14 @@ aliases:
 - "CAN bus"
 - "Controller Area Network"
 created: 2026-05-22
-updated: 2026-11-21
+updated: 2026-11-26
 type: concept
 tags:
 - software
 - canarchy
 - research
 sources:
+- wiki/sources/moving-target-defense-sdn-enabled-ev-charging-network-2026-10-08.md
 - wiki/sources/mids-detecting-stealthy-masquerade-and-tampering-attacks-on-can-bus-via-bidirectional-mamba-2026-06-17.md
 - wiki/sources/deep-defence-on-wheels-dual-ids-in-vehicle-network-security-2026-10-05.md
 - wiki/sources/uspto-karma-vehicle-security-system-2026-11-12.md
@@ -38,7 +39,7 @@ Wikipedia: [CAN bus](https://en.wikipedia.org/wiki/CAN_bus)
 - The Deep Defence on Wheels paper adds a deployment-oriented dual IDS pattern: quantized supervised and unsupervised models on FPGA can target known and unseen CAN anomalies, but cross-vehicle generalization, false positives, adversarial robustness, and fail-safe behavior remain open validation requirements. deep-defence-on-wheels-dual-ids-in-vehicle-network-security
 - Software-defined vehicles widen the scope further: software-defined-vehicles turns the vehicle into a software-managed platform where OTA updates, cloud services, and supply-chain trust become part of the security perimeter.
 
-- moving-target-defense-sdn-enabled-ev-charging-network adds a network-layer defense against low-rate SDN flow-table exhaustion, but remains an emulated-testbed result requiring deployment validation.
+- A moving-target defense for SDN-enabled EV charging networks (CS-SHIELD) counters low-rate attacks that exhaust switch flow tables by reshuffling chargers' virtual IP addresses when flow state and authenticated charging sessions disagree. It remains an emulated-testbed result requiring deployment validation. ^[sources/moving-target-defense-sdn-enabled-ev-charging-network-2026-10-08.md]
 
 ## November 2026 updates (updated 2026-11-21)
 - CAN data is privacy-sensitive: CANTraj recovers vehicle trajectories from decoded CAN events even when GPS fields are omitted. ^[sources/cantraj-vehicle-trajectory-recovery-2026-11-13.md]

@@ -14,7 +14,6 @@ tags:
 - infotainment
 sources:
 - wiki/sources/android-aaos-cve-2026-58915-2026-11-02.md
-- wiki/sources/android-aaos-cve-2026-11-02.md
 - wiki/sources/lg-uplus-iso-sae-21434-ml3-2026-11-10.md
 - wiki/sources/monitoring-vulnerabilities-next-generation-automotive-operating-systems-2026-07-08.md
 confidence: medium
@@ -32,7 +31,7 @@ Android Automotive OS (AAOS) is the vehicle-embedded build of Android that runs 
 
 ## What the archive shows
 - **Passenger displays are a new trust boundary.** CVE-2026-58915 lets an occupant on an AAOS multi-user, multi-display passenger screen view sensitive heads-up notification content and run protected passenger-user actions without authentication. The record lists Android 14, 15, 16, 16 QPR2 and 17 as affected and carries no CVSS score. ^[sources/android-aaos-cve-2026-58915-2026-11-02.md]
-- **The November 2026 bulletin is a patch set, not one ticket.** It lists eight high-severity AAOS-specific CVEs: six elevation-of-privilege issues (CVE-2026-49903, CVE-2026-49906, CVE-2026-58915, CVE-2026-58925, CVE-2026-58927, CVE-2026-58930) and two information-disclosure issues (CVE-2026-58924, CVE-2026-58926). ^[sources/android-aaos-cve-2026-11-02.md]
+- **The November 2026 bulletin is a patch set, not one ticket.** It lists eight high-severity AAOS-specific CVEs: six elevation-of-privilege issues (CVE-2026-49903, CVE-2026-49906, CVE-2026-58915, CVE-2026-58925, CVE-2026-58927, CVE-2026-58930) and two information-disclosure issues (CVE-2026-58924, CVE-2026-58926). ^[sources/android-aaos-cve-2026-58915-2026-11-02.md]
 - **Automotive OS exposure needs normalization, not raw CVE counts.** The VERA work on next-generation automotive operating systems shows that cross-stack scanning, package/version normalization and exploitability filtering matter more than raw CVE enumeration. ^[sources/monitoring-vulnerabilities-next-generation-automotive-operating-systems-2026-07-08.md]
 - **Supplier process evidence for infotainment is appearing.** LG Uplus reports ISO/SAE 21434 ML3 certification applied to real infotainment software projects. ^[sources/lg-uplus-iso-sae-21434-ml3-2026-11-10.md]
 

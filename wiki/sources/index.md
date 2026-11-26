@@ -37,6 +37,7 @@ These records preserve citation metadata and canonical URLs. Full captures remai
 - [lg uplus iso sae 21434 ml3 2026 11 10 ](lg-uplus-iso-sae-21434-ml3-2026-11-10.md)
 - [mids detecting stealthy masquerade and tampering attacks on can bus via bidirectional mamba 2026 06 17 ](mids-detecting-stealthy-masquerade-and-tampering-attacks-on-can-bus-via-bidirectional-mamba-2026-06-17.md)
 - [monitoring vulnerabilities next generation automotive operating systems 2026 07 08 ](monitoring-vulnerabilities-next-generation-automotive-operating-systems-2026-07-08.md)
+- [moving target defense sdn enabled ev charging network 2026 10 08 ](moving-target-defense-sdn-enabled-ev-charging-network-2026-10-08.md)
 - [post quantum cryptography automotive context 2026 10 28 ](post-quantum-cryptography-automotive-context-2026-10-28.md)
 - [sam curry forgerock two automakers 2026 11 07 ](sam-curry-forgerock-two-automakers-2026-11-07.md)
 - [scirep vanet hybrid dl secure clustering 2026 11 23 ](scirep-vanet-hybrid-dl-secure-clustering-2026-11-23.md)

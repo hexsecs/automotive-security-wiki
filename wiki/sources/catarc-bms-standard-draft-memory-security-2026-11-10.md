@@ -1,10 +1,19 @@
 ---
-title: Catarc Bms Standard Draft Memory Security 2026 11 10
+title: "Chinese draft national standard for EV battery-management systems, with memory-data protection testing (public consultation)"
 type: source-record
+source_type: standard
+published: 2026-11-10
 status: metadata-only
-public_record: Referenced by a private briefing; no public capture was available at export time.
+source_url: https://zxd.catarc.org.cn/zxd/seekPublicAdvice/pagePublishAdviceStdList/964
+public_record: metadata-only
 ---
 
-# Catarc Bms Standard Draft Memory Security 2026 11 10
+# Chinese draft national standard for EV battery-management systems, with memory-data protection testing (public consultation)
 
-No source capture or canonical URL was available for this public export.
+This is a public citation record. The full source text is intentionally not republished here.
+
+**Canonical source:** [https://zxd.catarc.org.cn/zxd/seekPublicAdvice/pagePublishAdviceStdList/964](https://zxd.catarc.org.cn/zxd/seekPublicAdvice/pagePublishAdviceStdList/964)
+
+**Publication date:** 2026-11-10
+
+**Evidence status:** Official consultation notice verified in the 14 November 2026 briefing. A draft for comment, not a final requirement; the detailed text is Chinese-language.
