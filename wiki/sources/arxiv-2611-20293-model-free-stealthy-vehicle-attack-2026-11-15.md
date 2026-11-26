@@ -1,10 +1,19 @@
 ---
-title: Arxiv 2611 20293 Model Free Stealthy Vehicle Attack 2026 11 15
+title: "Model-free stealthy attack on vehicle control, challenging IDS and ISO/SAE 21434 feasibility scoring"
 type: source-record
+source_type: paper
+published: 2026-11-15
 status: metadata-only
-public_record: Referenced by a private briefing; no public capture was available at export time.
+source_url: https://arxiv.org/abs/2611.20293
+public_record: metadata-only
 ---
 
-# Arxiv 2611 20293 Model Free Stealthy Vehicle Attack 2026 11 15
+# Model-free stealthy attack on vehicle control, challenging IDS and ISO/SAE 21434 feasibility scoring
 
-No source capture or canonical URL was available for this public export.
+This is a public citation record. The full source text is intentionally not republished here.
+
+**Canonical source:** [https://arxiv.org/abs/2611.20293](https://arxiv.org/abs/2611.20293)
+
+**Publication date:** 2026-11-15
+
+**Evidence status:** Canonical arXiv record, date, methods and reported benchmark results verified in the 18 November 2026 briefing. Independent replication and vehicle-specific validation remain open.

@@ -28,3 +28,11 @@
 - The 23 November quiet-day briefing yielded no new durable claim; it is recorded in the EV charging briefing trail.
 - Added five metadata-only source records, listed all source records in the source index (22 were missing), and regenerated `wiki/sources/MANIFEST.sha256`, which also lacked the 19 November edge IDS record.
 - Briefing snapshots were not edited.
+
+## 2026-11-26 provenance | Canonical origins for placeholder source records
+- An audit found 17 source records with no canonical URL (placeholders created at export) and one paper cited in two notes with no record at all.
+- Six records took their canonical URL from the briefing that cites them: the OCPP SAST, model-free attack and CULypso arXiv papers, the CATARC BMS draft, the LG Uplus ML3 announcement, and the AAOS bulletin. The AAOS record duplicates the existing bulletin record; it is kept because the 4 November briefing names it, and the AAOS note now cites the original.
+- Eleven records were matched to arXiv or publisher records by title, authors and date (checked against arXiv on 26 November): GNSS spoofing for V2X, MIDS, VERA, SecApp, self-adaptive anomaly detection, GARAGE, the automotive HSM paper, Deep Defence on Wheels, SecFD-FL, the SDV security survey (ACM DOI) and Architecture 2.0 (IEEE Computer DOI). The GNSS paper's date was corrected from 19 to 18 June; the SDV survey's 23 June date matches no arXiv version and is flagged as unconfirmed in its record.
+- Added a record for the moving-target defense paper (arXiv 2610.11996) and cited it in the SDV and automotive CAN notes, which had named it without a citation.
+- Removed unrelated sources from three SDV-note citations that had accumulated papers belonging to neighboring bullets.
+- Regenerated `wiki/sources/MANIFEST.sha256`. Briefing snapshots were not edited.
