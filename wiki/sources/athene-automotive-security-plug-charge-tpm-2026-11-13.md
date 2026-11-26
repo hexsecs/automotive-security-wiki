@@ -17,4 +17,4 @@ This is a public citation record. The full source capture is intentionally not r
 
 **Canonical source:** [https://www.athene-center.de/forschung/publikationen/automotive-security-architectures-for-plug-charge-5499](https://www.athene-center.de/forschung/publikationen/automotive-security-architectures-for-plug-charge-5499)
 **Publication date:** 2026-11-13
-**Evidence status:** `captured`
+**Evidence status:** Medium — publisher page and abstract are verified, but the page gives only year-level metadata and the design is a conference-paper proposal/emulation, not fleet deployment evidence. (as assessed in the [15 November 2026 briefing](../briefings/automotive/2026/11/2026-11-15.md))

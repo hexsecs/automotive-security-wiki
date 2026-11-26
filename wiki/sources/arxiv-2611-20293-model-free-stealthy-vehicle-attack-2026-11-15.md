@@ -1,5 +1,5 @@
 ---
-title: "Model-free stealthy attack on vehicle control, challenging IDS and ISO/SAE 21434 feasibility scoring"
+title: "Model-Free Stealthy Attack on Vehicle Systems and Its Implications for ISO/SAE 21434 Risk Assessment"
 type: source-record
 source_type: paper
 published: 2026-11-15
@@ -8,7 +8,7 @@ source_url: https://arxiv.org/abs/2611.20293
 public_record: metadata-only
 ---
 
-# Model-free stealthy attack on vehicle control, challenging IDS and ISO/SAE 21434 feasibility scoring
+# Model-Free Stealthy Attack on Vehicle Systems and Its Implications for ISO/SAE 21434 Risk Assessment
 
 This is a public citation record. The full source text is intentionally not republished here.
 

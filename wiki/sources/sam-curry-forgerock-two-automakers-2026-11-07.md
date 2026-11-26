@@ -17,4 +17,4 @@ This is a public citation record. The full source capture is intentionally not r
 
 **Canonical source:** [https://samcurry.net/forgerock](https://samcurry.net/forgerock)
 **Publication date:** 2026-11-07
-**Evidence status:** `captured`
+**Evidence status:** High — canonical researcher write-up, timeline, affected technology, and controlled-test boundary verified; affected brands and current residual exposure are unknown. (as assessed in the [10 November 2026 briefing](../briefings/automotive/2026/11/2026-11-10.md))

@@ -18,4 +18,4 @@ This is a public citation record. The full source capture is intentionally not r
 
 **Canonical source:** [https://www.cert-in.org.in/s2cMainServlet?VLCODE=CIVN-2026-0537&pageid=PUBVLNOTES01](https://www.cert-in.org.in/s2cMainServlet?VLCODE=CIVN-2026-0537&pageid=PUBVLNOTES01)
 **Publication date:** 2026-11-04
-**Evidence status:** `captured`
+**Evidence status:** High — official CERT-In note and affected/fixed versions verified; the advisory does not establish active exploitation or vehicle-control compromise. (as assessed in the [10 November 2026 briefing](../briefings/automotive/2026/11/2026-11-10.md))

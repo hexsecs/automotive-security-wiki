@@ -4,7 +4,7 @@ title: Can Autonomous Vehicles Keep Their Cool? A Survey of Thermal Side-Channel
 aliases:
 - "thermal side-channel"
 type: source-record
-source_type: article
+source_type: paper
 published: 2026-10-15
 status: metadata-only
 source_url: https://arxiv.org/abs/2610.21034
@@ -17,3 +17,4 @@ This is a public citation record. The full source capture is intentionally not r
 
 **Canonical source:** [https://arxiv.org/abs/2610.21034](https://arxiv.org/abs/2610.21034)
 **Publication date:** 2026-10-15
+**Evidence status:** Medium-high — canonical record and date verified. (as assessed in the [21 October 2026 briefing](../briefings/automotive/2026/10/2026-10-21.md))

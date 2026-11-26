@@ -36,3 +36,10 @@
 - Added a record for the moving-target defense paper (arXiv 2610.11996) and cited it in the SDV and automotive CAN notes, which had named it without a citation.
 - Removed unrelated sources from three SDV-note citations that had accumulated papers belonging to neighboring bullets.
 - Regenerated `wiki/sources/MANIFEST.sha256`. Briefing snapshots were not edited.
+
+## 2026-11-26 provenance | Evidence statements for every source record
+- A second audit found 28 records whose evidence status said only `captured`, or nothing. Each now carries the confidence statement from the briefing that assessed it, with a link to that briefing; wording is unchanged except one internal process clause removed from the thermal side-channel record.
+- Corrected three record titles written in #8 to the papers' actual titles (OCPP SAST, model-free stealthy attack, CULypso), and five source types (two arXiv papers to `paper`; the AAOS bulletin and two ZDI records to `advisory`).
+- The site's source pages showed only the frontmatter `status` code as "Evidence status" and never rendered the written assessment. They now show it as "Assessment", with the code relabelled "Capture status".
+- Checked every source URL: arXiv records against the arXiv API (titles and dates match) and the rest over HTTP. CERT-In timed out and ACM, UNECE and MDPI refused automated requests; none is a confirmed broken link.
+- Regenerated `wiki/sources/MANIFEST.sha256`. Briefing snapshots were not edited.

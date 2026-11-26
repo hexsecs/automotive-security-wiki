@@ -14,3 +14,4 @@ This is a public citation record. The full source capture is intentionally not r
 
 **Canonical source:** [https://vicone.com/blog/ai-defined-vehicles-practical-gains-and-implications-for-automotive-cybersecurity/](https://vicone.com/blog/ai-defined-vehicles-practical-gains-and-implications-for-automotive-cybersecurity/)
 **Publication date:** 2026-10-29
+**Evidence status:** Medium — direct publisher analysis with a clear publication date and canonical URL; the AIDV concept and its operational implications remain emergent, and the article is part one of a two-part series. (as assessed in the [31 October 2026 briefing](../briefings/automotive/2026/10/2026-10-31.md))

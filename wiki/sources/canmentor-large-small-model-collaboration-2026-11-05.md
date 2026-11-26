@@ -4,7 +4,7 @@ title: 'CANMentor: A Large-Small Model Collaboration Framework for CAN Bus Intru
 aliases:
 - "CANMentor"
 type: source-record
-source_type: article
+source_type: paper
 published: 2026-11-05
 status: metadata-only
 source_url: https://arxiv.org/abs/2611.07853
@@ -17,3 +17,4 @@ This is a public citation record. The full source capture is intentionally not r
 
 **Canonical source:** [https://arxiv.org/abs/2611.07853](https://arxiv.org/abs/2611.07853)
 **Publication date:** 2026-11-05
+**Evidence status:** Medium — canonical abstract/date verified; preprint claims remain independently unvalidated. (as assessed in the [8 November 2026 briefing](../briefings/automotive/2026/11/2026-11-08.md))

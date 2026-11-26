@@ -17,3 +17,4 @@ This is a public citation record. The full source capture is intentionally not r
 
 **Canonical source:** [https://vicone.com/blog/vicone-situational-awareness-report-400-cyber-incidents-with-in-vehicle-systems-most-affected-in-q3-2026/](https://vicone.com/blog/vicone-situational-awareness-report-400-cyber-incidents-with-in-vehicle-systems-most-affected-in-q3-2026/)
 **Publication date:** 2026-10-18
+**Evidence status:** Medium — direct publisher source, but the counts are proprietary observations rather than a sector census. (as assessed in the [21 October 2026 briefing](../briefings/automotive/2026/10/2026-10-21.md))

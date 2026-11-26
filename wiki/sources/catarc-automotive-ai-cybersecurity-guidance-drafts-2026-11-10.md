@@ -14,4 +14,4 @@ This is a public citation record. The full source capture is intentionally not r
 
 **Canonical source:** [https://zxd.catarc.org.cn/zxd/seekPublicAdvice/pagePublishAdviceStdList/963](https://zxd.catarc.org.cn/zxd/seekPublicAdvice/pagePublishAdviceStdList/963)
 **Publication date:** 2026-11-10
-**Evidence status:** `captured`
+**Evidence status:** High — official CATARC standards-platform notice and date verified; the documents are drafts open for comment, not final mandatory standards. (as assessed in the [13 November 2026 briefing](../briefings/automotive/2026/11/2026-11-13.md))
