@@ -6,7 +6,7 @@ aliases:
 - "vehicle IDS"
 - "intrusion detection"
 created: 2026-11-21
-updated: 2026-11-21
+updated: 2026-11-23
 type: concept
 tags:
 - research
@@ -19,6 +19,7 @@ sources:
 - wiki/sources/arxiv-2611-20293-model-free-stealthy-vehicle-attack-2026-11-15.md
 - wiki/sources/deep-defence-on-wheels-dual-ids-in-vehicle-network-security-2026-10-05.md
 - wiki/sources/mids-detecting-stealthy-masquerade-and-tampering-attacks-on-can-bus-via-bidirectional-mamba-2026-06-17.md
+- wiki/sources/vehicular-edge-ids-post-quantum-cryptography-2026-11-19.md
 confidence: medium
 contested: false
 contradictions: []
@@ -38,10 +39,12 @@ In-vehicle intrusion detection systems (IDS) watch CAN and automotive Ethernet t
 - **Public evidence for vehicle networks is thin.** The Cybersecurity Dataset Observatory catalogs 234 network-traffic datasets across 14 domains and finds limited public evidence for V2X and other vehicular networks, with many datasets shipping only processed records. ^[sources/arxiv-2611-20812-cybersecurity-dataset-observatory-2026-11-16.md]
 - **Adaptive attackers can stay under thresholds.** A model-free false-data-injection attack kept attack-period alarm rates below 2.4% at a matched 1% false-alarm point across the monitors it was tested against. ^[sources/arxiv-2611-20293-model-free-stealthy-vehicle-attack-2026-11-15.md]
 
+- **Benchmark hygiene can change the deployment decision.** A vehicular edge study removed label and identity fields, de-duplicated records, and split VeReMi NextGen by sender. CICIoV2024 retained 694 unique records on the selected raw CAN fields, and the authors did not validate across vehicles or chronologically. The study also evaluates detector and post-quantum cryptography choices under a shared deadline and bandwidth budget. Its embedded timing estimates should be checked on the target gateway under representative load. ^[sources/vehicular-edge-ids-post-quantum-cryptography-2026-11-19.md]
+
 ## Evidence checklist
 Before comparing or adopting an in-vehicle IDS result, record:
 - Dataset provenance, and whether raw traffic (not only processed features) is available
-- How train and test windows are split, and how leakage is prevented
+- How train and test windows are split, which label or identity fields are excluded, and how many distinct records remain after de-duplication
 - Vehicle-specific identifiers, timing drift and ECU changes
 - Replay, coordinated and adaptive attacks, not only the published attack set
 - Latency, false-positive rate in normal driving, and what happens when an alarm fires
