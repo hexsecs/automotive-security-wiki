@@ -7,7 +7,7 @@ aliases:
 - "SDVs"
 - "SDV"
 created: 2026-06-27
-updated: 2026-11-21
+updated: 2026-11-26
 type: concept
 tags:
 - research
@@ -24,6 +24,7 @@ sources:
 - wiki/sources/deep-defence-on-wheels-dual-ids-in-vehicle-network-security-2026-10-05.md
 - wiki/sources/secfd-fl-secure-aggregation-iov-charging-load-forecasting-2026-10-09.md
 - wiki/sources/vicone-q3-2026-automotive-cyber-incidents.md
+- wiki/sources/zf-digital-toolbox-2026-11-24.md
 confidence: medium
 contested: false
 contradictions: []
@@ -64,6 +65,12 @@ Wikipedia: [Software Defined Vehicle](https://en.wikipedia.org/wiki/Software_Def
   - [[concepts/ai-defined-vehicles|AI-Defined Vehicles]] covers models and agents in vehicle decisions.
   - [[concepts/vehicle-trust-anchors|Vehicle Trust Anchors and Cryptography]] covers HSMs, TPMs and PQC.
   - [[concepts/automotive-tara|Automotive TARA]] covers ISO/SAE 21434 risk analysis.
+  - [[concepts/v2x-security|V2X Security]] covers vehicle-to-vehicle and vehicle-to-infrastructure links.
+
+## Supplier-delivered lifecycle services (updated 2026-11-26)
+- Suppliers are packaging the update and service path as a product. ZF Commercial Vehicle Solutions announced Digital Toolbox on 24 November 2026: diagnostics, secure ECU access, software management, OTA updates and component health monitoring, which OEMs can adopt one at a time or integrate with their own backends. ^[sources/zf-digital-toolbox-2026-11-24.md]
+- When one supplier offers both diagnostics and update delivery, the split of authority between the OEM backend, the supplier service and the vehicle becomes a procurement question. Ask who can authorize diagnostic access and who can approve a software update, who holds the signing keys, how roles are separated and audited, and how the vehicle recovers when a backend is unavailable.
+- The announcement states scope only. It does not establish security conformance or field performance.
 
 ## Related pages
 - [[automotive-can]]

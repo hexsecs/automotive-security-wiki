@@ -6,7 +6,7 @@ aliases:
 - "vehicle IDS"
 - "intrusion detection"
 created: 2026-11-21
-updated: 2026-11-23
+updated: 2026-11-26
 type: concept
 tags:
 - research
@@ -57,9 +57,11 @@ Before comparing or adopting an in-vehicle IDS result, record:
 - [[briefings/automotive/2026/11/2026-11-08|8 Nov 2026]]: CANMentor
 - [[briefings/automotive/2026/11/2026-11-18|18 Nov 2026]]: model-free stealthy attack
 - [[briefings/automotive/2026/11/2026-11-20|20 Nov 2026]]: PhantoMasq, Dataset Observatory
+- [[briefings/automotive/2026/11/2026-11-24|24 Nov 2026]]: V2X survey; apply this checklist to candidate V2X detectors
 
 ## Related pages
 - [[concepts/can-masquerade-attacks|CAN Masquerade Attacks]]
 - [[concepts/automotive-can|Automotive CAN]]
 - [[concepts/automotive-tara|Automotive TARA]]
 - [[concepts/vehicle-data-privacy|Vehicle Data Privacy]]
+- [[concepts/v2x-security|V2X Security]]

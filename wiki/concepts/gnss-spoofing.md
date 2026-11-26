@@ -54,6 +54,7 @@ This paper frames GNSS spoofing as a practical threat to V2X systems because coo
 
 ## Related pages
 - gnss-spoofing-threat-for-v2x-communications
+- [[concepts/v2x-security|V2X Security]]
 - [[automotive-can|Automotive CAN]]
 - [Public source records](../sources/)
 - [[concepts/vehicle-data-privacy|Vehicle Data Privacy]]
