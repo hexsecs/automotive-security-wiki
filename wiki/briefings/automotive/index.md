@@ -6,6 +6,7 @@ title: Automotive cybersecurity briefings
 # Automotive cybersecurity briefings
 
 Dated, immutable security briefings organized by publication date.
+- [[briefings/automotive/2026/11/2026-11-28|Automotive Cybersecurity Briefing — 2026-11-28]] — A new paper benchmarks gateway-to-ECU mutual authentication and key updates on a two-node CAN-FD bench.
 - [[briefings/automotive/2026/11/2026-11-27|Automotive Cybersecurity Briefing — 2026-11-27]] — A new paper quantifies how stale channel estimates affect modeled V2I physical-layer confidentiality.
 - [[briefings/automotive/2026/11/2026-11-26|Automotive Cybersecurity Briefing — 2026-11-26]] — A V2X study reports traffic-state recovery under falsified position data, and a revised UNECE table lists a provisional R156 supplement date.
 - [[briefings/automotive/2026/11/2026-11-25|Automotive Cybersecurity Briefing — 2026-11-25]] — Six ChargePoint Home Flex disclosures lead the issue, alongside a vehicular-network research paper and a ZF software lifecycle announcement.
