@@ -16,4 +16,4 @@ This is a public citation record. The full source capture is intentionally not r
 
 **Canonical source:** [https://www.blockharbor.io/blog/an-introduction-into-the-automotive-threat-matrix](https://www.blockharbor.io/blog/an-introduction-into-the-automotive-threat-matrix)
 **Publication date:** 2026-11-04
-**Evidence status:** `captured`
+**Evidence status:** Medium — direct publisher page and publication date verified; the article is practitioner guidance and relies partly on Auto-ISAC materials, not a measured deployment study. (as assessed in the [5 November 2026 briefing](../briefings/automotive/2026/11/2026-11-05.md))

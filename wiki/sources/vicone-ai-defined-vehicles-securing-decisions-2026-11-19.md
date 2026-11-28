@@ -14,4 +14,4 @@ This is a public citation record. The full source capture is intentionally not r
 
 **Canonical source:** [https://vicone.com/blog/ai-defined-vehicles-securing-the-decisions-that-drive-vehicle-behavior/](https://vicone.com/blog/ai-defined-vehicles-securing-the-decisions-that-drive-vehicle-behavior/)
 **Publication date:** 2026-11-19
-**Evidence status:** `captured`
+**Evidence status:** Medium-high — publisher date, recommendations, and cited examples were verified on the canonical page; the operational risk depends on each vehicle's architecture, model permissions, and safety controls. (as assessed in the [19 November 2026 briefing](../briefings/automotive/2026/11/2026-11-19.md))

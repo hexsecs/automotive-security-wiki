@@ -15,3 +15,4 @@ This is a public citation record. The full source capture is intentionally not r
 
 **Canonical source:** [https://arxiv.org/abs/2610.40944](https://arxiv.org/abs/2610.40944)
 **Publication date:** 2026-10-29
+**Evidence status:** Medium — canonical abstract and submission date verified; the paper is a preprint and the abstract supports methodology, not operational effectiveness. (as assessed in the [2 November 2026 briefing](../briefings/automotive/2026/11/2026-11-02.md))

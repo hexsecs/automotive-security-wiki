@@ -17,4 +17,4 @@ This is a public citation record. The full source capture is intentionally not r
 
 **Canonical source:** [https://arxiv.org/abs/2611.20812](https://arxiv.org/abs/2611.20812)
 **Publication date:** 2026-11-16
-**Evidence status:** `captured`
+**Evidence status:** Medium — canonical arXiv abstract and reported catalog figures verified; catalog completeness and domain-specific conclusions should be checked against the observatory itself. (as assessed in the [20 November 2026 briefing](../briefings/automotive/2026/11/2026-11-20.md))

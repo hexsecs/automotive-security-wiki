@@ -1,5 +1,5 @@
 ---
-title: "CULypso: clustered federated unlearning for vehicular ad hoc networks"
+title: "CULypso: A Clustered Federated Unlearning paradigm for Vehicular Ad-Hoc Networks"
 aliases:
 - "CULypso"
 type: source-record
@@ -10,7 +10,7 @@ source_url: https://arxiv.org/abs/2611.22682
 public_record: metadata-only
 ---
 
-# CULypso: clustered federated unlearning for vehicular ad hoc networks
+# CULypso: A Clustered Federated Unlearning paradigm for Vehicular Ad-Hoc Networks
 
 This is a public citation record. The full source text is intentionally not republished here.
 

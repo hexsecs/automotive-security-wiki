@@ -15,3 +15,4 @@ This is a public citation record. The full source capture is intentionally not r
 
 **Canonical source:** [https://arxiv.org/abs/2610.42032](https://arxiv.org/abs/2610.42032)
 **Publication date:** 2026-10-30
+**Evidence status:** Medium — direct arXiv source and publication date verified; sector labels rely on a research classification pipeline and the result is not an exploit disclosure. (as assessed in the [2 November 2026 briefing](../briefings/automotive/2026/11/2026-11-02.md))

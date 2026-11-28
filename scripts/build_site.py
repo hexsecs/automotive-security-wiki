@@ -1051,6 +1051,8 @@ def build_concept_index(site: Site) -> str:
 def build_source(site: Site, s: Page) -> str:
     r = Renderer(site, s)
     url = s.meta.get("source_url", "")
+    ev = re.search(r"\*\*Evidence status:\*\*\s*(.+)", s.body)
+    assessment = r.inline(ev.group(1).strip()) if ev and ev.group(1).strip().strip("`") not in ("captured", "metadata-only") else ""
     cited_in = [b for b in site.briefings if s.stem in b.body] + [c for c in site.concepts if s.stem in str(c.meta.get("sources"))]
     cited = "".join(f'<li><a href="{esc(relurl(s.url, p.url))}">{esc(p.title)}</a></li>' for p in cited_in)
     body = f"""
@@ -1062,7 +1064,8 @@ def build_source(site: Site, s: Page) -> str:
     <dl class="kv cc">
       <div><dt>Canonical URL</dt><dd>{f'<a class="ext" href="{esc(url)}" rel="noopener">{esc(url)}</a>' if url else '—'}</dd></div>
       <div><dt>Published</dt><dd>{esc(s.meta.get('published', '—'))}</dd></div>
-      <div><dt>Evidence status</dt><dd><code>{esc(s.meta.get('status', '—'))}</code></dd></div>
+      {f'<div><dt>Assessment</dt><dd>{assessment}</dd></div>' if assessment else ''}
+      <div><dt>Capture status</dt><dd><code>{esc(s.meta.get('status', '—'))}</code></dd></div>
       <div><dt>Public record</dt><dd>{esc(s.meta.get('public_record', '—'))}</dd></div>
     </dl>
     <p class="muted">This is a public citation record. The full source capture is intentionally not republished here.</p>

@@ -17,4 +17,4 @@ This is a public citation record. The full source capture is intentionally not r
 
 **Canonical source:** [https://news.skhynix.com/en/iec-61508-certification-2026/](https://news.skhynix.com/en/iec-61508-certification-2026/)
 **Publication date:** 2026-11-11
-**Evidence status:** `captured`
+**Evidence status:** Medium — direct company newsroom and date verified; certification scope and vehicle-program relevance remain company-reported and customer-specific. (as assessed in the [13 November 2026 briefing](../briefings/automotive/2026/11/2026-11-13.md))

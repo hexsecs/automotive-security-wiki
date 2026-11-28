@@ -17,4 +17,4 @@ This is a public citation record. The full source capture is intentionally not r
 
 **Canonical source:** [https://arxiv.org/abs/2611.18442](https://arxiv.org/abs/2611.18442)
 **Publication date:** 2026-11-13
-**Evidence status:** `captured`
+**Evidence status:** Medium-high — canonical arXiv record, date, abstract, dataset scale, and headline results verified; external validation across OEM-specific CAN schemas and operational datasets remains open. (as assessed in the [16 November 2026 briefing](../briefings/automotive/2026/11/2026-11-16.md))
